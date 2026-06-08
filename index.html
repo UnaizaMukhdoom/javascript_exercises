@@ -239,7 +239,59 @@ person.greet(); // hello  Ali
 
 
 
+//Understanding this keyword.
+const person = {
+    name: "Ali",
 
+    greet() {
+        console.log(this.name);
+    }
+};
+
+person.greet();  // Ali
+
+
+
+const user = {
+    name: "Ali",
+
+    showName() {
+        console.log(this.name);
+    }
+};
+
+user.showName();   // error
+
+
+const user = {
+    name: "Ali",
+
+    showName() {
+        console.log(this.name);
+    }
+};
+
+user.showName();  //Ali
+
+
+const student = {
+    name: "Sara",
+
+    greet() {
+        console.log("Hello, I am " + this.name);
+    }
+};
+
+const teacher = {
+    name: "Ahmed",
+
+    greet() {
+        console.log("Hello, I am " + this.name);
+    }
+};
+
+student.greet(); // Hello, I am Sara
+teacher.greet(); // Hello, I am Ahmed
 
 
 
