@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <h1 id="title">Hello</h1>
+<button id="btn">Click Me</button>
 <body>
   <script>
     // Javascript Basics & exercises:
@@ -298,6 +299,14 @@ teacher.greet(); // Hello, I am Ahmed
 
 //DOM (DOUCEMENT OBJECT MODEL)
     document.getElementById("title").innerHTML = "Welcome to DOM";
+
+
+
+    // Events and Events Listeners.
+
+      document.getElementById("btn").addEventListener("click", function () {
+        console.log("Button clicked");
+    });
 
 
     </script>
