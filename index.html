@@ -204,12 +204,45 @@ const greet = () => {
 };   // reference error because variables are not stored in memory during the creation ph
 // ase of the execution context, only the declaration is stored. The assignment of the function expression to the variable 'greet' happens during the execution phase, which is why it results in a reference error when called before its declaration.  
 
+//JS: Objects. (property, methods, prototypes)
+// javascript objects
+
+const person = {
+    name: "Ali",
+    age: 25,
+    city: "Lahore"
+};
+
+console.log(person.name); // Ali
+console.log(person.age);  // 25
+console.log(person.city); // Lahore
+
+const person1= {
+    name: "zara",
+    age: 15
+};
+
+console.log(person1["name"]); // zara
+console.log(person1["age"]);  // 15
+
+
+const person3 = {
+    name: "Ali",
+
+    greet: function () {
+        console.log("Hello" + this.name);
+        
+    }
+};
+
+person.greet(); // hello  Ali
 
 
 
 
 
-const 
+
+
 
     </script>
 </body>
