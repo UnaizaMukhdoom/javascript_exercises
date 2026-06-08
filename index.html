@@ -111,5 +111,67 @@ console.log(Math.ceil(price));   //100
 
 
 
+
+
+//functions
+// function declaration
+function greet() {
+    console.log("Hello World");
+}
+
+//.............
+greet();  // Hello World
+
+function name(){
+    console.log("My name is unaiza");
+    name();  //error
+}
+
+// function with parameters
+function greet(name) {
+    console.log("Hello " + name);
+}
+greet("Unaiza");  // Hello Unaiza
+greet("Ali");     // Hello Ali
+
+
+//function returing a value
+function add(a, b) {
+    return a + b;
+}
+let result = add(10, 5);
+console.log(result);  // 15
+
+
+// function with arrow function 
+const greet = (name) => {
+    console.log("Hello " + name);                               
+}
+greet("Unaiza");  // Hello Unaiza
+
+//// Time Out Delays (setTimeout)
+setTimeout(() => {
+    console.log("This message is displayed after 2 seconds");   
+}, 2000);     // 2000 milliseconds = 2 seconds
+
+
+//
+console.log("Start");   // start
+
+setTimeout(() => {
+    console.log("Executed after 3 seconds");
+}, 3000);
+
+console.log("End"); // End
+
+
+for (let i = 0; i < 4; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 1000);
+}
+
+
+
     </script>
 </body>
