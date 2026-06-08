@@ -171,7 +171,45 @@ for (let i = 0; i < 4; i++) {
     }, 1000);
 }
 
+//Hoisting
 
+//let and const
+ let x=10;
+ console.log(x);  // 10
+
+ let y;
+ console.log(y);  // undefined
+  let y=3;
+
+
+ const q=9;
+ console.log(q);  // 9
+
+console.log(city);
+const city = "Lahore"; // reference error
+
+
+//Function declartion
+greet();  // hello
+
+function greet() {
+    console.log("Hello");
+} 
+
+
+greet();
+
+const greet = () => {
+    console.log("Hello");
+};   // reference error because variables are not stored in memory during the creation ph
+// ase of the execution context, only the declaration is stored. The assignment of the function expression to the variable 'greet' happens during the execution phase, which is why it results in a reference error when called before its declaration.  
+
+
+
+
+
+
+const 
 
     </script>
 </body>
